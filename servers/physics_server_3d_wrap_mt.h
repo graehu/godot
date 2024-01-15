@@ -176,6 +176,7 @@ public:
 
 	FUNC2(body_set_space, RID, RID);
 	FUNC1RC(RID, body_get_space, RID);
+        FUNC1(body_clear_areas, RID);
 
 	FUNC2(body_set_mode, RID, BodyMode);
 	FUNC1RC(BodyMode, body_get_mode, RID);

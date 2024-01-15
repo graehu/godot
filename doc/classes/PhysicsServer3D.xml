@@ -464,6 +464,13 @@
 				Returns a body state.
 			</description>
 		</method>
+		<method name="body_clear_areas" qualifiers="const">
+			<return type="RID" />
+			<param index="0" name="body" type="RID" />
+			<description>
+				clears the areas associated with this body.
+			</description>
+		</method>
 		<method name="body_is_axis_locked" qualifiers="const">
 			<return type="bool" />
 			<param index="0" name="body" type="RID" />

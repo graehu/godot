@@ -754,6 +754,7 @@ void PhysicsServer3D::_bind_methods() {
 
 	ClassDB::bind_method(D_METHOD("body_set_space", "body", "space"), &PhysicsServer3D::body_set_space);
 	ClassDB::bind_method(D_METHOD("body_get_space", "body"), &PhysicsServer3D::body_get_space);
+	ClassDB::bind_method(D_METHOD("body_clear_areas", "body"), &PhysicsServer3D::body_clear_areas);
 
 	ClassDB::bind_method(D_METHOD("body_set_mode", "body", "mode"), &PhysicsServer3D::body_set_mode);
 	ClassDB::bind_method(D_METHOD("body_get_mode", "body"), &PhysicsServer3D::body_get_mode);
