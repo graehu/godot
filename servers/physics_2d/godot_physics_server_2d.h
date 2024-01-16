@@ -184,6 +184,8 @@ public:
 
 	virtual void body_remove_shape(RID p_body, int p_shape_idx) override;
 	virtual void body_clear_shapes(RID p_body) override;
+   
+        virtual void body_clear_areas(RID p_body) override;
 
 	virtual void body_set_shape_disabled(RID p_body, int p_shape_idx, bool p_disabled) override;
 	virtual void body_set_shape_as_one_way_collision(RID p_body, int p_shape_idx, bool p_enable, real_t p_margin) override;

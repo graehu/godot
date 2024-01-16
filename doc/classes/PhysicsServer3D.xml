@@ -348,6 +348,13 @@
 				Removes all shapes from a body.
 			</description>
 		</method>
+		<method name="body_clear_areas">
+			<return type="void" />
+			<param index="0" name="body" type="RID" />
+			<description>
+				Remove all the areas associated with the body.
+			</description>
+		</method>
 		<method name="body_create">
 			<return type="RID" />
 			<description>
@@ -462,13 +469,6 @@
 			<param index="1" name="state" type="int" enum="PhysicsServer3D.BodyState" />
 			<description>
 				Returns a body state.
-			</description>
-		</method>
-		<method name="body_clear_areas" qualifiers="const">
-			<return type="RID" />
-			<param index="0" name="body" type="RID" />
-			<description>
-				clears the areas associated with this body.
 			</description>
 		</method>
 		<method name="body_is_axis_locked" qualifiers="const">

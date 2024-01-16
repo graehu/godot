@@ -193,6 +193,8 @@ public:
 	FUNC2(body_remove_shape, RID, int);
 	FUNC1(body_clear_shapes, RID);
 
+   	FUNC1(body_clear_areas, RID);
+
 	FUNC2(body_attach_object_instance_id, RID, ObjectID);
 	FUNC1RC(ObjectID, body_get_object_instance_id, RID);
 

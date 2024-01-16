@@ -464,12 +464,6 @@ void GodotPhysicsServer3D::body_set_space(RID p_body, RID p_space) {
 	body->set_space(space);
 };
 
-void GodotPhysicsServer3D::body_clear_areas(RID p_body) {
-	GodotBody3D *body = body_owner.get_or_null(p_body);
-	ERR_FAIL_NULL(body);
-	body->clear_areas();
-};
-
 RID GodotPhysicsServer3D::body_get_space(RID p_body) const {
 	GodotBody3D *body = body_owner.get_or_null(p_body);
 	ERR_FAIL_NULL_V(body, RID());
@@ -569,6 +563,13 @@ void GodotPhysicsServer3D::body_clear_shapes(RID p_body) {
 	while (body->get_shape_count()) {
 		body->remove_shape(0);
 	}
+}
+
+void GodotPhysicsServer3D::body_clear_areas(RID p_body) {
+	GodotBody3D *body = body_owner.get_or_null(p_body);
+	ERR_FAIL_NULL(body);
+
+	body->clear_areas();
 }
 
 void GodotPhysicsServer3D::body_set_enable_continuous_collision_detection(RID p_body, bool p_enable) {

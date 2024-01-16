@@ -163,7 +163,6 @@ public:
 
 	// create a body of a given type
 	virtual RID body_create() override;
-   	virtual void body_clear_areas(RID p_body) override;
 
 	virtual void body_set_space(RID p_body, RID p_space) override;
 	virtual RID body_get_space(RID p_body) const override;
@@ -183,6 +182,8 @@ public:
 
 	virtual void body_remove_shape(RID p_body, int p_shape_idx) override;
 	virtual void body_clear_shapes(RID p_body) override;
+   
+      	virtual void body_clear_areas(RID p_body) override;
 
 	virtual void body_attach_object_instance_id(RID p_body, ObjectID p_id) override;
 	virtual ObjectID body_get_object_instance_id(RID p_body) const override;

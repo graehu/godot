@@ -291,7 +291,6 @@ public:
 
 	EXBIND2(body_set_space, RID, RID)
 	EXBIND1RC(RID, body_get_space, RID)
-	EXBIND1(body_clear_areas, RID)
 
 	EXBIND2(body_set_mode, RID, BodyMode)
 	EXBIND1RC(BodyMode, body_get_mode, RID)
@@ -307,6 +306,8 @@ public:
 
 	EXBIND2(body_remove_shape, RID, int)
 	EXBIND1(body_clear_shapes, RID)
+
+	EXBIND1(body_clear_areas, RID)
 
 	EXBIND2(body_attach_object_instance_id, RID, ObjectID)
 	EXBIND1RC(ObjectID, body_get_object_instance_id, RID)

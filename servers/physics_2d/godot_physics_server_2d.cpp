@@ -647,6 +647,13 @@ void GodotPhysicsServer2D::body_clear_shapes(RID p_body) {
 	}
 }
 
+void GodotPhysicsServer2D::body_clear_areas(RID p_body) {
+	GodotBody2D *body = body_owner.get_or_null(p_body);
+	ERR_FAIL_NULL(body);
+	
+	body->clear_areas();
+}
+
 void GodotPhysicsServer2D::body_set_shape_disabled(RID p_body, int p_shape_idx, bool p_disabled) {
 	GodotBody2D *body = body_owner.get_or_null(p_body);
 	ERR_FAIL_NULL(body);

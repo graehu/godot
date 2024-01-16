@@ -395,7 +395,6 @@ public:
 
 	virtual RID body_create() = 0;
    
-	virtual void body_clear_areas(RID p_body) = 0;
 	virtual void body_set_space(RID p_body, RID p_space) = 0;
 	virtual RID body_get_space(RID p_body) const = 0;
 
@@ -412,6 +411,8 @@ public:
 
 	virtual void body_remove_shape(RID p_body, int p_shape_idx) = 0;
 	virtual void body_clear_shapes(RID p_body) = 0;
+
+        virtual void body_clear_areas(RID p_body) = 0;
 
 	virtual void body_set_shape_disabled(RID p_body, int p_shape_idx, bool p_disabled) = 0;
 

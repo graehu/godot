@@ -754,7 +754,6 @@ void PhysicsServer3D::_bind_methods() {
 
 	ClassDB::bind_method(D_METHOD("body_set_space", "body", "space"), &PhysicsServer3D::body_set_space);
 	ClassDB::bind_method(D_METHOD("body_get_space", "body"), &PhysicsServer3D::body_get_space);
-	ClassDB::bind_method(D_METHOD("body_clear_areas", "body"), &PhysicsServer3D::body_clear_areas);
 
 	ClassDB::bind_method(D_METHOD("body_set_mode", "body", "mode"), &PhysicsServer3D::body_set_mode);
 	ClassDB::bind_method(D_METHOD("body_get_mode", "body"), &PhysicsServer3D::body_get_mode);
@@ -779,6 +778,8 @@ void PhysicsServer3D::_bind_methods() {
 
 	ClassDB::bind_method(D_METHOD("body_remove_shape", "body", "shape_idx"), &PhysicsServer3D::body_remove_shape);
 	ClassDB::bind_method(D_METHOD("body_clear_shapes", "body"), &PhysicsServer3D::body_clear_shapes);
+
+	ClassDB::bind_method(D_METHOD("body_clear_areas", "body"), &PhysicsServer3D::body_clear_areas);
 
 	ClassDB::bind_method(D_METHOD("body_attach_object_instance_id", "body", "id"), &PhysicsServer3D::body_attach_object_instance_id);
 	ClassDB::bind_method(D_METHOD("body_get_object_instance_id", "body"), &PhysicsServer3D::body_get_object_instance_id);

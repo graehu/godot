@@ -306,6 +306,8 @@ public:
 	EXBIND2(body_remove_shape, RID, int)
 	EXBIND1(body_clear_shapes, RID)
 
+	EXBIND1(body_clear_areas, RID)
+
 	EXBIND2(body_attach_object_instance_id, RID, ObjectID)
 	EXBIND1RC(ObjectID, body_get_object_instance_id, RID)
 

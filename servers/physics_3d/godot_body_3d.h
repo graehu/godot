@@ -175,10 +175,9 @@ public:
 		}
 	}
 
-   _FORCE_INLINE_ void clear_areas()
-   {
-      areas.clear();
-   }
+        _FORCE_INLINE_ void clear_areas() {
+	   areas.clear();
+	}
 
 	_FORCE_INLINE_ void set_max_contacts_reported(int p_size) {
 		contacts.resize(p_size);

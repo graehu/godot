@@ -231,6 +231,8 @@ void PhysicsServer2DExtension::_bind_methods() {
 	GDVIRTUAL_BIND(_body_remove_shape, "body", "shape_idx");
 	GDVIRTUAL_BIND(_body_clear_shapes, "body");
 
+	GDVIRTUAL_BIND(_body_clear_areas, "body");
+
 	GDVIRTUAL_BIND(_body_attach_object_instance_id, "body", "id");
 	GDVIRTUAL_BIND(_body_get_object_instance_id, "body");
 
