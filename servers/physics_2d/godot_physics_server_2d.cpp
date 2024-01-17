@@ -650,7 +650,7 @@ void GodotPhysicsServer2D::body_clear_shapes(RID p_body) {
 void GodotPhysicsServer2D::body_clear_areas(RID p_body) {
 	GodotBody2D *body = body_owner.get_or_null(p_body);
 	ERR_FAIL_NULL(body);
-	
+
 	body->clear_areas();
 }
 
